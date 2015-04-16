@@ -69,7 +69,7 @@ Same error as using the SDK generate by my laptop
 
 Able to boot in qemu; Fail to load GUI in qemu (qemu from either VM or my laptop)
 
-Able to boot in demo VM; Able to load GUI (The only work-well condition)
+Able to boot in demo VM; Able to load GUI *(The ONLY work-well condition)*
 
 But only l2x0-2linux works fine, l1x0-1linux failed similarly as it on my laptop. (qemu system panic; demo VM booted, half way die)
 
