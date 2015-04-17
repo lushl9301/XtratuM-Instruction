@@ -1,4 +1,4 @@
-# Run Linux Kernel
+# Run XtratuM examples with Linux Kernel
 
 > Build Kernel
 
