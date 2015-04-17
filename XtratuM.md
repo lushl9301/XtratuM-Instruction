@@ -133,3 +133,9 @@ lsmod | grep usb
 dmesg
 sudo tail -f /var/log/syslog
 ```
+
+>   Driver localtion
+
+```sh
+/lib/modules/3.16.0-0.bpo.4-amd64/kernel/drivers/
+```
