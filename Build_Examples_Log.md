@@ -11,7 +11,8 @@ sudo cp /opt/linux-3.0.34-xm /opt/linux-3.0.34-xm.b
 sudo cp /boot/config-3.x.x-amd64 /opt/linux-3.0.34-xm/
 cd /opt/linux-3.0.34-xm/
 sudo cp config-3.x.x-amd64 .config
-sudo make localmodconfig
+#or
+zcat /proc/config.gz > .config
 ```
 ```
 sudo make
