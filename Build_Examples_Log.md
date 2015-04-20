@@ -10,10 +10,34 @@ sudo cp /opt/linux-3.0.34-xm /opt/linux-3.0.34-xm.b
 #use current running config
 sudo cp /boot/config-3.x.x-amd64 /opt/linux-3.0.34-xm/
 cd /opt/linux-3.0.34-xm/
-sudo cp config-3.x.x-amd64 .config
+sudo cp config-3.x.x-amd64 running.config
 #or
-zcat /proc/config.gz > .config
+zcat /proc/config.gz > running.config
 ```
+
+> In addition
+
+There are several lines that configure XtratuM in the original ```.config```
+```config
+CONFIG_XM_PARTITION=y
+# CONFIG_XM_BOOTCONSOLE is not set
+# CONFIG_XM_DEBUGCONSOLE is not set
+CONFIG_XM_VIRTSRV=y
+CONFIG_XM_SPARE_MANAGER=y
+# CONFIG_XM_RESET is not set
+CONFIG_XMIO_SERVER=y
+CONFIG_XMIO_CLIENT=y
+CONFIG_XMIO_SCAN_PERIOD=100
+# CONFIG_XMIO_SSE2_MEMCPY is not set
+```
+
+```sh
+emacs .config
+#copy and paste into our running.config
+sudo mv .config .config.b.xm
+sudo cp running.config .config
+```
+
 ```
 sudo make
 sudo make modules
