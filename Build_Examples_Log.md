@@ -98,4 +98,6 @@ Able to boot; Half way die; Stop with
 It should be noticed that generated *resident_sw.iso* is much smaller than a working image.
 
 
-//TODO compare two SDK
+> When comparing 2 SDK
+
+There is one different; spare.h and spare schedular configuration; (I cannot change by menuconfig. but it doesn't really matter)
