@@ -159,3 +159,21 @@ No debug information, just XtratuM running message.
 
 
 > **Currently, the whole SDK is not working... simple examples are not working well**
+
+-------
+
+> **FAIL** Re-do everything
+
+copy sdk; linux-3.0.34-xm patched linux kernel;
+
+**FAIL** when use the copied modules from demo VM
+
+no booting
+
+**FAIL** use the modules generate by kernel building
+
+no booting
+
+**FAIL** use original kernel source file after build
+
+booted, half way die
