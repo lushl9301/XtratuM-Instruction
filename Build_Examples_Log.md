@@ -153,3 +153,9 @@ Press some key, the kernel is loading. And again, half way die
 These two files are not involved in any source code, any linux kernel makefile.
 
 Possibly, they are used in some binary/executable tools.
+
+> **FAILE** Do not change kontron_defconfig and xtratum_defconfig, re-build original kernel code
+No debug information, just XtratuM running message.
+
+
+> **Currently, the whole SDK is not working... simple examples are not working well**
