@@ -122,20 +122,31 @@ Able to boot; Half way die; Stop with
 It should be noticed that generated *resident_sw.iso* is much smaller than a working image.
 
 
+-------
+
+
 > When comparing 2 SDK
 
 There is one different; spare.h and spare schedular configuration; (I cannot change by menuconfig. but it doesn't really matter)
+
+
+-------
+
 
 > Keep using SDK provided in demo VM
 
 > Copy the several lines mentioned above, make kernel again
 
-```sh
+```
 error: no argument specified.
 Press any key to continue...
 ```
 
 Press some key, the kernel is loading. And again, half way die
+
+
+-------
+
 
 > Change Example's linux directory to current built kernel directory, modify kontron_defconfig and xtratum_defconfig
 
