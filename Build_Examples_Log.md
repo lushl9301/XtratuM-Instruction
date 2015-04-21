@@ -160,7 +160,9 @@ No debug information, just XtratuM running message.
 
 > **Currently, the whole SDK is not working... simple examples are not working well**
 
+
 -------
+
 
 > **FAIL** Re-do everything
 
@@ -177,3 +179,11 @@ no booting
 **FAIL** use original kernel source file after build
 
 booted, half way die
+
+
+-------
+
+
+> **FAIL** re-install xtratum sdk 2.4
+
+Hello world is not working...
