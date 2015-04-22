@@ -187,3 +187,24 @@ booted, half way die
 > **FAIL** re-install xtratum sdk 2.4
 
 Hello world is not working...
+
+> **FAIL** **SOLVED** demo VM examples not working
+
+
+-------
+
+
+```sh
+qemu -m 512 -serial stdio -hda resident_sw.iso
+```
+No flags are supposed to be ignored. Otherwise, it will show errors.
+
+> **FAIL** Change linux loader lds file
+
+[https://github.com/lushl9301/XtratuM-Instruction/commit/f71a9cfdb58cbc8dbe252d8f16dd384e8287f0a0]
+
+Make examples error.
+
+```sh
+ld: cannot find -lxm
+```
