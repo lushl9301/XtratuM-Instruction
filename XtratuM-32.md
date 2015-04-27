@@ -29,3 +29,10 @@ sudo apt-get install gcc-multilib
 sudo make clean
 make
 ```
+
+###Example has ERROR
+
+```sh
+/opt/xm-sdk/xal/common/rules.mk:86: recipe for target 'xm_cf.c.xmc' failed
+make: *** [xm_cf.c.xmc] Segmentation fault
+```
