@@ -23,3 +23,9 @@ compilation terminated.
 <builtin>: recipe for target 'ia32/linux_boot.o' failed
 make[3]: *** [ia32/linux_boot.o] Error 1
 ```
+
+```sh
+sudo apt-get install gcc-multilib
+sudo make clean
+make
+```
