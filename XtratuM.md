@@ -10,7 +10,7 @@ sudo apt-get install gcc-multilib
 sudo dpkg--add-architecture i386
 sudo apt-get install libxml2-dev:i386
 sudo apt-get install makeself
-sudo apt-get install xorrise
+sudo apt-get install xorriso
 ```
 
 ### Make
