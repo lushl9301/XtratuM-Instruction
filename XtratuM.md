@@ -80,6 +80,8 @@ search --no-floppy --fs-uuid --set=root xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 
 **DO NOT** run ```update-grub``` after manually updating ```grub.cfg```
 
+-------
+
 >   run in qemu
 
 ```sh
