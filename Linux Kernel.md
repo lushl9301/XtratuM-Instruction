@@ -1,4 +1,4 @@
-# Run XtratuM examples with Linux Kernel
+# Build Patched Linux Kernel for XtratuM
 
 ### Build Kernel
 
