@@ -1,0 +1,47 @@
+#! /bin/bash
+# grub-mkconfig helper script.
+set -e
+
+getroot()
+{
+rootdev=`mount | grep "/boot" | awk '{print $1}' | awk -F "/" '{print $3}'`
+if [ "$rootdev" = "" ]; then
+	rootdev=`mount | grep "/ " | awk '{print $1}' | awk -F "/" '{print $3}'`
+fi
+string=`blkid | grep "$rootdev"`
+for dev in `ls /dev/disk/by-uuid`; do
+	if `echo ${string} | grep "${dev}" 1>/dev/null 2>&1`
+	then
+		local root=$dev
+		break
+	fi
+done
+echo "$root"
+}
+
+list=`for i in /boot/xm/*.xm; do echo $i; done`
+uuid=$(getroot)
+for xtratum in $list; do
+echo "Found xtratum image: $xtratum" >&2
+
+descr=`echo $xtratum | sed 's:\(.*\).xm:\1:'`
+menuentry="XtratuM application, $descr"
+
+#unit=`printf "%d\n" \'${rootdev:2:1}`
+#base=`printf "%d\n" \'a`
+#unit=`expr $unit - $base`
+#part=${rootdev:3:1}
+#if [ $part > 4 ]; then
+#	part=`expr $part - 4`
+#fi
+
+cat << EOF
+	menuentry '$menuentry' --class xtratum --class gnu-linux --class gnu --class os {
+	insmod part_msdos
+	insmod ext2
+	set root='(hd0,msdos1)'
+	search --no-floppy --fs-uuid --set=root $uuid
+	multiboot $xtratum
+	}
+EOF
+done
