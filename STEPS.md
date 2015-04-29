@@ -8,7 +8,9 @@
 
 ### 2. Build Patched Linux Kernel
 
-  [Build Patched Linux Kernel](https://github.com/lushl9301/XtratuM-Instruction/blob/master/Linux%20Kernel.md)
+  Directly build modules using  ```.config``` in the patched kernel folder
+  
+  Or [Build Patched Linux Kernel](https://github.com/lushl9301/XtratuM-Instruction/blob/master/Linux%20Kernel.md) according to current running kernel configurations
 
 ### 3. Compile Examples
 
