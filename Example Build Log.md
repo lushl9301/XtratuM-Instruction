@@ -1,5 +1,8 @@
 # Examples building log
 
+A clearer summary is shown [here](https://github.com/lushl9301/XtratuM-Instruction/blob/master/Problem%20Summary.md).
+
+
 |              Testings in *demo VM*             |       |       |       |       |   |     |   |     |
 |:----------------------------------------------:|:-----:|:-----:|:-----:|:-----:|:-:|:---:|:-:|:---:|
 | **1** for my pc's SDK; **0** for demo VM's SDK |       |       |       |       |   |     |   |     |
