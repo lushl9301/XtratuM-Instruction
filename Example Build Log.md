@@ -1,5 +1,28 @@
 # Examples building log
 
+|              Testings in *demo VM*             |       |       |       |       |   |     |   |     |
+|:----------------------------------------------:|:-----:|:-----:|:-----:|:-----:|:-:|:---:|:-:|:---:|
+| **1** for my pc's SDK; **0** for demo VM's SDK |       |       |       |       |   |     |   |     |
+|                       XM                       |   0   |   0   |   0   |   0   | 1 |  1  | 1 |  1  |
+|                      Linux                     |   0   |   0   |   1   |   1   | 0 |  0  | 1 |  1  |
+|                       XAL                      |   0   |   1   |   0   |   1   | 0 |  1  | 0 |  1  |
+|                                                |       |       |       |       |   |     |   |     |
+|                                                |       |       |       |       |   |     |   |     |
+|         **1** for OKAY; **0** for fail         |       |       |       |       |   |     |   |     |
+|                   Hello World                  |  *1*  |   0   |  *1*  |   0   | 0 | *1* | 0 | *1* |
+|                   l2x0-2linux                  | **1** | **1** | **1** | **1** | 0 |  0  | 0 |  0  |
+
+##### Results:
+
+Hello World = ~(XM xor XAL) // *IFF* XM and XAL are from the **same source**
+
+l2x0-2linux = ~XM // *IFF* XM from **demo VM**
+
+
+----------------
+
+
+### Trying other ways
 > **FAIL** Use the SDK on **my laptop**
 
 *Hello World* Example fails:
