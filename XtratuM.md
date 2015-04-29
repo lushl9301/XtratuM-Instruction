@@ -52,6 +52,8 @@ cd one_of_the_examples
 sudo make
 ```
 
+-------
+
 >   run and boot from grub
 
 ```sh
