@@ -18,4 +18,4 @@
 
 ### 4. Build Log
 
-  [Examples Building Log](https://github.com/lushl9301/XtratuM-Instruction/blob/master/Example%20Build%20Log.md)
+  [Problem Summary](https://github.com/lushl9301/XtratuM-Instruction/blob/master/Problem%20Summary.md)
