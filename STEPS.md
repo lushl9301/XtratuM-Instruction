@@ -14,8 +14,6 @@
 
   [Build Examples in 64-bit OS](https://github.com/lushl9301/XtratuM-Instruction/blob/master/XtratuM.md#compile-examples)
 
-  [Build Examples in 32-bit OS](https://github.com/lushl9301/XtratuM-Instruction/blob/master/XtratuM-32.md#example-has-error)
-
 ### 4. Build Log
 
   [Problem Summary](https://github.com/lushl9301/XtratuM-Instruction/blob/master/Problem%20Summary.md)
